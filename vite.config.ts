@@ -17,5 +17,8 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: "./src/setupTests.ts",
-  },
+    },
+    build: {
+      outDir: "./cdk/resources/build",
+  }
 });

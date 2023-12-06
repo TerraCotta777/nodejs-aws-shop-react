@@ -1,3 +1,8 @@
+
+CloudFront link: https://d1cqyiegaxwv9q.cloudfront.net
+S3 Bucket link: https://cdkstack-shopreactbucket8511fdbc-1o733axs8csy9.s3.ap-northeast-2.amazonaws.com/index.html
+
+
 # React-shop-cloudfront
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:

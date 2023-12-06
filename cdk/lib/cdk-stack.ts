@@ -9,7 +9,7 @@ import {
 } from "aws-cdk-lib/aws-cloudfront";
 import { S3Origin } from "aws-cdk-lib/aws-cloudfront-origins";
 
-export class CdkStack extends cdk.Stack {
+export class Frontend extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
@@ -32,7 +32,8 @@ export class CdkStack extends cdk.Stack {
           originAccessIdentity,
         }),
         viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-        },
+      },
+      defaultRootObject: 'index.html',
       errorResponses: [
         {
           httpStatus: 404,

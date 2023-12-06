@@ -53,6 +53,9 @@
     "vite": "^2.9.13",
     "vitest": "^0.17.1"
   },
+  "overrides": {
+    "graphql": "16.8.1"
+  },
   "msw": {
     "workerDirectory": "public"
   },

@@ -32,8 +32,7 @@ export class CdkStack extends cdk.Stack {
           originAccessIdentity,
         }),
         viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
-      },
-      defaultRootObject: "index.html",
+        },
       errorResponses: [
         {
           httpStatus: 404,
